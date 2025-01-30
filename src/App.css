@@ -36,3 +36,9 @@
     transform: rotate(360deg);
   }
 }
+
+ /* gradient from left to right */
+
+.hame{
+  background: linear-gradient(to right, #384191, #b36cc7);
+}

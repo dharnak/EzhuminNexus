@@ -1,9 +1,10 @@
 import React from "react";
 import { motion } from "framer-motion";
+import '../App.css'
 
 const Hero = () => {
   return (
-    <section id="home" className="h-screen flex items-center justify-center text-center bg-gradient-to-r from-purple-500 to-indigo-600 text-white">
+    <section id="home" className="hame h-screen flex items-center justify-center text-center  text-white">
       <motion.div 
         initial={{ opacity: 0, y: -50 }} 
         animate={{ opacity: 1, y: 0 }} 
