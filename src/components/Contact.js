@@ -96,7 +96,7 @@ const Contact = () => {
             { icon: <FaFacebook />, url: "https://facebook.com", color: "blue-600" },
             { icon: <FaTwitter />, url: "https://twitter.com", color: "blue-400" },
             { icon: <FaLinkedin />, url: "https://linkedin.com", color: "blue-700" },
-            { icon: <FaInstagram />, url: "https://instagram.com", color: "pink-500" },
+            { icon: <FaInstagram />, url: "https://www.instagram.com/ezhum_ingroup/", color: "pink-500" },
           ].map((social, index) => (
             <motion.a
               key={index}

@@ -1,14 +1,11 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { FaLaptopCode, FaMobileAlt, FaCloud, FaDatabase, FaShieldAlt, FaRobot } from "react-icons/fa";
+import { FaEye, FaBullseye, FaHandshake} from "react-icons/fa";
 
-const services = [
-  { id: 1, title: "Web Development", icon: <FaLaptopCode size={40} />, description: "Building modern, fast, and responsive websites with the latest technologies." },
-  { id: 2, title: "Mobile App Development", icon: <FaMobileAlt size={40} />, description: "Creating seamless and scalable mobile applications for iOS and Android." },
-  { id: 3, title: "Cloud Solutions", icon: <FaCloud size={40} />, description: "Providing cloud-based solutions for efficient and secure data management." },
-  { id: 4, title: "Database Management", icon: <FaDatabase size={40} />, description: "Optimizing and maintaining databases for better performance and security." },
-  { id: 5, title: "Cyber Security", icon: <FaShieldAlt size={40} />, description: "Ensuring top-tier security for your applications and data from cyber threats." },
-  { id: 6, title: "AI & Automation", icon: <FaRobot size={40} />, description: "Integrating AI and automation to streamline business processes effectively." },
+const teamMembers = [
+  { id: 1, name: "John Doe", role: "CEO", image: "https://via.placeholder.com/150" },
+  { id: 2, name: "Jane Smith", role: "CTO", image: "https://via.placeholder.com/150" },
+  { id: 3, name: "Mike Johnson", role: "Lead Developer", image: "https://via.placeholder.com/150" },
 ];
 
 const About = () => {
@@ -20,25 +17,63 @@ const About = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
       >
-        Our IT Services
+        Who We Are
       </motion.h2>
-
-      <p className="mt-4 text-lg text-gray-600 max-w-2xl mx-auto">
-        We provide a wide range of IT services to help businesses grow and stay competitive in the digital world.
-      </p>
-
-      {/* Services Grid */}
-      <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 px-6 max-w-6xl mx-auto">
-        {services.map((service) => (
+      <motion.p
+        className="mt-4 text-lg text-gray-600 max-w-2xl mx-auto"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 1.5 }}
+      >
+        We are a dedicated team of professionals committed to delivering innovative IT solutions.
+      </motion.p>
+      
+      <div className="mt-10 flex flex-col md:flex-row justify-center items-center gap-10 px-6">
+        {[{
+          icon: <FaEye size={40} className="text-blue-500" />, title: "Our Vision", description: "To revolutionize technology by empowering businesses with cutting-edge solutions."
+        }, {
+          icon: <FaBullseye size={40} className="text-blue-500" />, title: "Our Mission", description: "To provide innovative, scalable, and secure IT solutions that drive success."
+        }, {
+          icon: <FaHandshake size={40} className="text-blue-500" />, title: "Our Values", description: "Integrity, Innovation, and Excellence in every solution we deliver."
+        }].map((item, index) => (
           <motion.div
-            key={service.id}
+            key={index}
             className="p-6 bg-white shadow-lg rounded-lg text-center flex flex-col items-center space-y-4"
-            whileHover={{ scale: 1.05 }}
+            whileHover={{ scale: 1.05, rotate: 2 }}
             transition={{ duration: 0.3 }}
           >
-            <div className="text-blue-500">{service.icon}</div>
-            <h3 className="text-xl font-semibold">{service.title}</h3>
-            <p className="text-gray-600">{service.description}</p>
+            {item.icon}
+            <h3 className="text-xl font-semibold">{item.title}</h3>
+            <p className="text-gray-600">{item.description}</p>
+          </motion.div>
+        ))}
+      </div>
+
+      <motion.h2
+        className="text-4xl font-bold mt-20"
+        initial={{ opacity: 0, y: -50 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1 }}
+      >
+        Meet the Team
+      </motion.h2>
+
+      <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 px-6 max-w-6xl mx-auto">
+        {teamMembers.map((member) => (
+          <motion.div
+            key={member.id}
+            className="p-6 bg-white shadow-lg rounded-lg text-center flex flex-col items-center space-y-4"
+            whileHover={{ scale: 1.1, rotate: -3 }}
+            transition={{ duration: 0.3 }}
+          >
+            <motion.img 
+              src={member.image} 
+              alt={member.name} 
+              className="w-24 h-24 rounded-full" 
+              whileHover={{ scale: 1.2 }}
+            />
+            <h3 className="text-xl font-semibold">{member.name}</h3>
+            <p className="text-gray-600">{member.role}</p>
           </motion.div>
         ))}
       </div>
