@@ -10,8 +10,8 @@ const Hero = () => {
         animate={{ opacity: 1, y: 0 }} 
         transition={{ duration: 1 }}
       >
-        <h1 className="text-5xl font-bold">Welcome to Ezhumin Nexus</h1>
-        <p className="mt-4 text-lg">Empowering businesses with cutting-edge technology</p>
+        <h1 className="text-5xl font-bold">Welcome to Ezhumin Group</h1>
+        <p className="mt-4 text-lg">The harder you work for something, the greater you'll feel when you achieve it</p>
       </motion.div>
     </section>
   );

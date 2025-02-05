@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
-import { FaLaptopCode, FaMobileAlt, FaCloud, FaDatabase, FaShieldAlt, FaRobot, FaCogs, FaShoppingCart, FaChartLine } from "react-icons/fa";
+import { FaLaptopCode, FaMobileAlt, FaRobot, FaCogs, FaShoppingCart, FaChartLine } from "react-icons/fa";
 
 const services = [
   {
@@ -16,27 +16,6 @@ const services = [
     icon: <FaMobileAlt size={40} />,
     description: "Creating intuitive and high-performance mobile applications for iOS and Android.",
     details: "We develop native and cross-platform apps using React Native, Flutter, and Swift.",
-  },
-  {
-    id: 3,
-    title: "Cloud Solutions",
-    icon: <FaCloud size={40} />,
-    description: "Providing cloud-based services, hosting, and storage solutions.",
-    details: "We work with AWS, Google Cloud, and Azure to ensure secure and scalable cloud infrastructure.",
-  },
-  {
-    id: 4,
-    title: "Database Management",
-    icon: <FaDatabase size={40} />,
-    description: "Optimizing and managing databases for efficient data handling.",
-    details: "We work with SQL, NoSQL, and cloud databases for optimal performance and security.",
-  },
-  {
-    id: 5,
-    title: "Cyber Security",
-    icon: <FaShieldAlt size={40} />,
-    description: "Ensuring security against cyber threats and data breaches.",
-    details: "Our services include penetration testing, threat analysis, and firewall implementation.",
   },
   {
     id: 6,
@@ -61,10 +40,10 @@ const services = [
   },
   {
     id: 9,
-    title: "Digital Marketing & SEO",
+    title: "Digital Marketing ",
     icon: <FaChartLine size={40} />,
     description: "Enhancing online presence through SEO and digital marketing strategies.",
-    details: "We provide SEO, PPC, and social media marketing to boost brand visibility.",
+    details: "We provide social media marketing to boost brand visibility.",
   },
 ];
 
@@ -79,7 +58,7 @@ const Services = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
       >
-        Our Services
+        Industrial Services
       </motion.h2>
 
       <p className="mt-4 text-lg text-gray-600 max-w-2xl mx-auto">

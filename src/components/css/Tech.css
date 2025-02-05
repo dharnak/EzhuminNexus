@@ -1,0 +1,70 @@
+ .Whole-con{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: rgb(230, 230, 230);
+}
+.container-c{
+    display: flex;
+    background-color: rgb(79, 108, 66);
+    height: 80%;
+    width: 90%;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.7;
+    padding: 1%;
+    border-radius: 10px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+.element{
+    display: flex;
+    height: 80%;
+    width: 90%;
+    background-color: rgb(255, 255, 255);
+   margin: 2%;
+   justify-content: center;
+    align-items: center; 
+   border-radius: 10px;
+   overflow: hidden;
+   opacity: 1;
+  
+}
+#img-100{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 90%;
+    width: 100%;
+    flex-direction: row;
+    background-color: rgb(221, 221, 221);
+    box-shadow: 10px 10px 10px gray;
+    border-radius: 10px;
+    margin-left: 100%;
+    position: relative; 
+    animation: movement 10s infinite;
+}
+@keyframes movement {
+    0% {
+        /* 
+         */
+         right: -100%;
+    }
+    33.33%{
+      right: 50%;
+    }
+    66.66%{
+        right: 190%;
+    }
+    100%{
+        right: -100%;
+    }
+}
+#Title-c{
+    font-size: xx-large;
+    font-weight: 400;
+}

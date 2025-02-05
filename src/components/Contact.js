@@ -104,7 +104,7 @@ const Contact = () => {
               target="_blank"
               rel="noopener noreferrer"
               className={`text-${social.color} text-3xl transition-transform transform hover:scale-125`}
-              whileHover={{ rotate: 10, scale: 1.2 }}
+              whileHover={{ rotate: 0, scale: 1.2 }}
             >
               {social.icon}
             </motion.a>
@@ -120,10 +120,10 @@ const Contact = () => {
         transition={{ duration: 1 }}
       >
         <p className="flex justify-center items-center space-x-3">
-          <FaEnvelope className="text-blue-600" /> <span>info@ezhuminexus.com</span>
+          <FaEnvelope className="text-blue-600" /> <span>ezhumingroup@gmail</span>
         </p>
         <p className="flex justify-center items-center space-x-3 mt-2">
-          <FaPhone className="text-green-600" /> <span>+91 98765 43210</span>
+          <FaPhone className="text-green-600" /> <span>+91 75980 67704</span>
         </p>
       </motion.div>
     </section>
