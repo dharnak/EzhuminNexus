@@ -74,3 +74,16 @@
     transform: rotate(360deg);
   }
 }
+mt-2 grid grid-cols-3 justify-center items-start gap-5
+
+.abouttitle{
+  margin-bottom: 20px;
+}
+.aboutflex{
+  display: flex;
+  justify-content:center;
+  gap: 10px;
+  height: 100px;
+  width: 300px;
+
+}
