@@ -32,7 +32,7 @@ const About = () => {
        <div className="abouttitle">Welcome to a team of passionate professionals driven by innovation and excellence. Our commitment to delivering value, we also empower growth through our transformative courses, designed to inspire, educate, and elevate your skills. Together, we shape the future one solution, one learner at a time</div>  
       </motion.p>
       
-      <div className="about mt-2 grid md:grid-cols-3 justify-center items-start gap-5 p-10 ">
+      <div className="about mt-2 grid md:grid-cols-3 justify-center items-start gap-5 p-8 ">
         {[{
           icon: <FaEye size={40} className="text-blue-500" />, title: "Our Vision", description: "To provide innovative and industry-focused solutions in Artificial Intelligence, IoT, Website and Mobile App Development, and Digital Marketing. Through our expert-led courses in MERN Stack, Full Stack Development, and AI/ML, we aim to equip individuals with the skills needed to thrive in the ever-evolving tech landscape."
         }, {
