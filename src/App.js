@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react"; 
 import Header from "./components/Header.js";
 import Hero from "./components/Hero.js";
 import About from "./components/About.js";
@@ -7,15 +7,16 @@ import Contact from "./components/Contact.js";
 import Footer from "./components/Footer.js";
 import Loading from "./components/Loading.js"; 
 import Course from "./components/Course.js";
-import Tech from "./components/Tech.js"
-function App(){
+import Tech from "./components/Tech.js";
+import AdvisementPopup from "./components/AdvisementPopup.js"; // Import the popup
+
+function App() {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    // Simulating a delay (e.g., fetching data)
     setTimeout(() => {
       setIsLoading(false);
-    }, 2000); // Adjust timing as needed
+    }, 2000);
   }, []);
 
   return (
@@ -24,11 +25,12 @@ function App(){
         <Loading />
       ) : (
         <>
+          <AdvisementPopup /> {/* Show the popup when the page loads */}
           <Header />
           <Hero />
           <About />
           <Services />
-          <Course/>
+          <Course />
           <Tech />
           <Contact />
           <Footer />
@@ -36,6 +38,6 @@ function App(){
       )}
     </div>
   );
-};
+}
 
 export default App;
