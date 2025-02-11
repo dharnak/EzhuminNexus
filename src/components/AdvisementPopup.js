@@ -1,6 +1,8 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { X } from "lucide-react";
+import img from './img/Black Gold Elegant Company Anniversary Poster (1).png';
+
 
 const AdvisementPopup = () => {
   const [isOpen, setIsOpen] = useState(true);
@@ -24,7 +26,7 @@ const AdvisementPopup = () => {
 
           {/* Image */}
           <img
-            src="https://dotnetinstitute.co.in/wp-content/uploads/2024/08/New-Batch.webp" // Replace with your image URL
+            src={img} // Replace with your image URL
             alt="Advisement"
             className="w-full rounded-lg"
           />
