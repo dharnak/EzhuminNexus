@@ -8,7 +8,7 @@ const teamMembers = [
   {  name: "Prasanna G",role:"Web Devlopment(Full Stack)", image: "https://static.vecteezy.com/system/resources/previews/014/194/232/original/avatar-icon-human-a-person-s-badge-social-media-profile-symbol-the-symbol-of-a-person-vector.jpg" },
   {  name: "Mohamed Mufeed J",role:"Moile App Development", image: "https://static.vecteezy.com/system/resources/previews/014/194/232/original/avatar-icon-human-a-person-s-badge-social-media-profile-symbol-the-symbol-of-a-person-vector.jpg" },
   {  name: "Dharneesh M T",role:"Web Development(MERN)" ,image: "https://static.vecteezy.com/system/resources/previews/014/194/232/original/avatar-icon-human-a-person-s-badge-social-media-profile-symbol-the-symbol-of-a-person-vector.jpg" },
-  {  name: "Godeson Joseph G", role:"Developer(Python Django)",image: "https://static.vecteezy.com/system/resources/previews/014/194/232/original/avatar-icon-human-a-person-s-badge-social-media-profile-symbol-the-symbol-of-a-person-vector.jpg"},
+  {  name: "Godson Joseph G", role:"Developer(Python Django)",image: "https://static.vecteezy.com/system/resources/previews/014/194/232/original/avatar-icon-human-a-person-s-badge-social-media-profile-symbol-the-symbol-of-a-person-vector.jpg"},
   {  name: "Johnbharathi J", role:"Developer(Java Spring boot)",image: "https://static.vecteezy.com/system/resources/previews/014/194/232/original/avatar-icon-human-a-person-s-badge-social-media-profile-symbol-the-symbol-of-a-person-vector.jpg" }
 ]
 
